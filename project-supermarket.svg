@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="edaBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#091419" />
+      <stop offset="50%" stop-color="#0f222d" />
+      <stop offset="100%" stop-color="#050a0d" />
+    </linearGradient>
+    <linearGradient id="barGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+    <linearGradient id="peakGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f43f5e" />
+      <stop offset="100%" stop-color="#be123c" />
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#edaBg)" />
+
+  <text x="400" y="260" font-family="'Syne', 'Inter', sans-serif" font-size="100" font-weight="900" fill="#ffffff" fill-opacity="0.03" text-anchor="middle" letter-spacing="16">ANALYTICS</text>
+
+  <!-- BI Dashboard Container -->
+  <g transform="translate(100, 90)">
+    <rect x="0" y="0" width="600" height="310" rx="16" fill="#0b1720" stroke="#1b3342" stroke-width="1.5" />
+    
+    <!-- Top Bar -->
+    <rect x="0" y="0" width="600" height="42" rx="16" fill="#132733" />
+    <circle cx="28" cy="21" r="5" fill="#ef4444" />
+    <circle cx="44" cy="21" r="5" fill="#f59e0b" />
+    <circle cx="60" cy="21" r="5" fill="#10b981" />
+    <text x="300" y="26" font-family="sans-serif" font-size="11" font-weight="700" fill="#38bdf8" text-anchor="middle">Jupyter / Pandas EDA &bull; 1,000 Transactions &bull; 16 Business Queries</text>
+
+    <!-- Key Metrics Ribbon -->
+    <rect x="30" y="60" width="160" height="60" rx="8" fill="#132733" />
+    <text x="45" y="80" font-family="sans-serif" font-size="9" font-weight="700" fill="#94a3b8">PEAK SALES DAY</text>
+    <text x="45" y="105" font-family="'Syne', sans-serif" font-size="18" font-weight="900" fill="#f43f5e">Saturday</text>
+
+    <rect x="210" y="60" width="170" height="60" rx="8" fill="#132733" />
+    <text x="225" y="80" font-family="sans-serif" font-size="9" font-weight="700" fill="#94a3b8">BUSIEST HOUR</text>
+    <text x="225" y="105" font-family="'Syne', sans-serif" font-size="18" font-weight="900" fill="#38bdf8">19:00 hrs</text>
+
+    <rect x="400" y="60" width="170" height="60" rx="8" fill="#132733" />
+    <text x="415" y="80" font-family="sans-serif" font-size="9" font-weight="700" fill="#94a3b8">F&amp;B SPEND DIVERGENCE</text>
+    <text x="415" y="105" font-family="'Syne', sans-serif" font-size="18" font-weight="900" fill="#10b981">+44% Female</text>
+
+    <!-- Bar Chart Visualizing Hourly Traffic -->
+    <g transform="translate(45, 140)">
+      <!-- Axis lines -->
+      <line x1="0" y1="120" x2="510" y2="120" stroke="#1b3342" stroke-width="1.5" />
+      
+      <!-- Bars -->
+      <rect x="30" y="90" width="28" height="30" rx="4" fill="url(#barGrad)" />
+      <rect x="75" y="70" width="28" height="50" rx="4" fill="url(#barGrad)" />
+      <rect x="120" y="55" width="28" height="65" rx="4" fill="url(#barGrad)" />
+      <rect x="165" y="40" width="28" height="80" rx="4" fill="url(#barGrad)" />
+      <rect x="210" y="60" width="28" height="60" rx="4" fill="url(#barGrad)" />
+      <rect x="255" y="35" width="28" height="85" rx="4" fill="url(#barGrad)" />
+      <rect x="300" y="20" width="28" height="100" rx="4" fill="url(#barGrad)" />
+      
+      <!-- Peak Bar (19:00) -->
+      <rect x="345" y="5" width="28" height="115" rx="4" fill="url(#peakGrad)" />
+      <text x="359" y="-2" font-family="sans-serif" font-size="9" font-weight="800" fill="#f43f5e" text-anchor="middle">PEAK</text>
+
+      <rect x="390" y="45" width="28" height="75" rx="4" fill="url(#barGrad)" />
+      <rect x="435" y="80" width="28" height="40" rx="4" fill="url(#barGrad)" />
+
+      <!-- Labels -->
+      <text x="44" y="135" font-family="sans-serif" font-size="9" fill="#94a3b8" text-anchor="middle">12h</text>
+      <text x="134" y="135" font-family="sans-serif" font-size="9" fill="#94a3b8" text-anchor="middle">14h</text>
+      <text x="224" y="135" font-family="sans-serif" font-size="9" fill="#94a3b8" text-anchor="middle">16h</text>
+      <text x="314" y="135" font-family="sans-serif" font-size="9" fill="#94a3b8" text-anchor="middle">18h</text>
+      <text x="359" y="135" font-family="sans-serif" font-size="9" font-weight="700" fill="#f43f5e" text-anchor="middle">19h</text>
+      <text x="449" y="135" font-family="sans-serif" font-size="9" fill="#94a3b8" text-anchor="middle">21h</text>
+    </g>
+  </g>
+
+  <text x="50" y="55" font-family="sans-serif" font-size="11" font-weight="700" letter-spacing="4" fill="#38bdf8">DATA SCIENCE &bull; PYTHON / 03</text>
+  <text x="750" y="55" font-family="sans-serif" font-size="11" font-weight="700" letter-spacing="2" fill="#38bdf8" text-anchor="end">EXPLORATORY DATA ANALYSIS</text>
+  <text x="50" y="445" font-family="'Syne', sans-serif" font-size="28" font-weight="800" fill="#ffffff" letter-spacing="1">Supermarket Sales Intelligence</text>
+  <text x="50" y="470" font-family="sans-serif" font-size="12" font-weight="500" fill="#94a3b8" letter-spacing="1">Python &bull; Pandas &bull; Matplotlib &bull; Seaborn &bull; Business Intelligence Insights</text>
+</svg>

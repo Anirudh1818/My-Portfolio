@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="wbBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#051923" />
+      <stop offset="50%" stop-color="#003554" />
+      <stop offset="100%" stop-color="#001824" />
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00a6fb" />
+      <stop offset="100%" stop-color="#0582ca" />
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#wbBg)" />
+
+  <text x="400" y="260" font-family="'Syne', 'Inter', sans-serif" font-size="95" font-weight="900" fill="#ffffff" fill-opacity="0.04" text-anchor="middle" letter-spacing="14">WEB BROTHERS</text>
+
+  <!-- Modern Browser / Lead Portal Mockup -->
+  <g transform="translate(100, 90)">
+    <rect x="0" y="0" width="600" height="310" rx="16" fill="#001724" stroke="#006494" stroke-width="1.5" />
+    
+    <!-- Top Bar -->
+    <rect x="0" y="0" width="600" height="42" rx="16" fill="#002438" />
+    <circle cx="28" cy="21" r="5" fill="#ef4444" />
+    <circle cx="44" cy="21" r="5" fill="#f59e0b" />
+    <circle cx="60" cy="21" r="5" fill="#10b981" />
+    <text x="300" y="26" font-family="sans-serif" font-size="11" font-weight="700" fill="#00a6fb" text-anchor="middle">webbrothers.digital — High-Converting Local Business Engine</text>
+
+    <!-- Content Row -->
+    <!-- Left Hero Banner -->
+    <rect x="30" y="65" width="280" height="215" rx="12" fill="#002b42" stroke="#004e75" stroke-width="1" />
+    <text x="50" y="105" font-family="'Syne', sans-serif" font-size="20" font-weight="800" fill="#ffffff">Scale Your Brand</text>
+    <text x="50" y="125" font-family="'Syne', sans-serif" font-size="20" font-weight="800" fill="#00a6fb">In Local Markets</text>
+    <text x="50" y="150" font-family="sans-serif" font-size="10" font-weight="500" fill="#90e0ef">Server-validated lead capture with direct Resend email delivery &amp; WhatsApp handoff.</text>
+    
+    <!-- Lead Stats Pill -->
+    <rect x="50" y="185" width="240" height="38" rx="8" fill="#001d2d" />
+    <text x="65" y="202" font-family="sans-serif" font-size="9" font-weight="700" fill="#00a6fb">CONVERSION METRIC</text>
+    <text x="65" y="215" font-family="sans-serif" font-size="11" font-weight="800" fill="#ffffff">+320% Qualified Leads Generated</text>
+
+    <rect x="50" y="235" width="130" height="28" rx="14" fill="url(#cyanGrad)" />
+    <text x="115" y="253" font-family="sans-serif" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">Book Discovery →</text>
+
+    <!-- Right: Architecture / Lead Workflow -->
+    <rect x="330" y="65" width="240" height="215" rx="12" fill="#002b42" stroke="#004e75" stroke-width="1" />
+    <text x="350" y="98" font-family="sans-serif" font-size="12" font-weight="700" fill="#ffffff">Automated Flow</text>
+    
+    <rect x="350" y="115" width="200" height="36" rx="6" fill="#001824" stroke="#00a6fb" stroke-width="1" />
+    <text x="365" y="132" font-family="sans-serif" font-size="9" font-weight="700" fill="#00a6fb">1. SERVER ACTIONS</text>
+    <text x="365" y="144" font-family="sans-serif" font-size="8" font-weight="500" fill="#cbd5e1">Next.js Validated Lead Capture</text>
+
+    <rect x="350" y="160" width="200" height="36" rx="6" fill="#001824" stroke="#10b981" stroke-width="1" />
+    <text x="365" y="177" font-family="sans-serif" font-size="9" font-weight="700" fill="#10b981">2. RESEND DELIVERY</text>
+    <text x="365" y="189" font-family="sans-serif" font-size="8" font-weight="500" fill="#cbd5e1">Instant Client Notification</text>
+
+    <rect x="350" y="205" width="200" height="36" rx="6" fill="#001824" stroke="#25d366" stroke-width="1" />
+    <text x="365" y="222" font-family="sans-serif" font-size="9" font-weight="700" fill="#25d366">3. WHATSAPP HANDOFF</text>
+    <text x="365" y="234" font-family="sans-serif" font-size="8" font-weight="500" fill="#cbd5e1">Direct High-Intent Pipeline</text>
+  </g>
+
+  <text x="50" y="55" font-family="sans-serif" font-size="11" font-weight="700" letter-spacing="4" fill="#00a6fb">CO-FOUNDER &amp; LEAD DEV / 02</text>
+  <text x="750" y="55" font-family="sans-serif" font-size="11" font-weight="700" letter-spacing="2" fill="#00a6fb" text-anchor="end">PRODUCTION CLIENT SUITE</text>
+  <text x="50" y="445" font-family="'Syne', sans-serif" font-size="28" font-weight="800" fill="#ffffff" letter-spacing="1">Web Brothers Digital — Studio Platform</text>
+  <text x="50" y="470" font-family="sans-serif" font-size="12" font-weight="500" fill="#90e0ef" letter-spacing="1">Next.js &bull; TypeScript &bull; Tailwind CSS &bull; Server Actions &bull; Resend API</text>
+</svg>

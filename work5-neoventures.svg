@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#041f1a" />
+      <stop offset="50%" stop-color="#02120f" />
+      <stop offset="100%" stop-color="#010605" />
+    </linearGradient>
+    <linearGradient id="emeraldGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#06b6d4" />
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#bgGrad5)" />
+
+  <!-- Modern FinTech Dashboard Graphic -->
+  <g transform="translate(140, 110)">
+    <!-- Main Card -->
+    <rect x="0" y="0" width="520" height="270" rx="16" fill="#082b24" stroke="#059669" stroke-width="1.5" />
+    <!-- Metric Pill -->
+    <rect x="30" y="30" width="140" height="40" rx="8" fill="#041f1a" />
+    <text x="45" y="48" font-family="sans-serif" font-size="9" font-weight="700" fill="#6ee7b7" letter-spacing="1">PORTFOLIO VALUATION</text>
+    <text x="45" y="63" font-family="sans-serif" font-size="14" font-weight="800" fill="#ffffff">$42.8M</text>
+
+    <!-- Glowing Chart Line -->
+    <path d="M 30 210 Q 120 180, 180 150 T 320 110 T 480 60" fill="none" stroke="url(#emeraldGrad)" stroke-width="4" stroke-linecap="round" />
+    <circle cx="480" cy="60" r="7" fill="#10b981" />
+    <circle cx="480" cy="60" r="14" fill="#10b981" fill-opacity="0.3" />
+
+    <!-- Grid lines -->
+    <line x1="30" y1="210" x2="490" y2="210" stroke="#064e3b" stroke-width="1" stroke-dasharray="4 4" />
+    <line x1="30" y1="160" x2="490" y2="160" stroke="#064e3b" stroke-width="1" stroke-dasharray="4 4" />
+    <line x1="30" y1="110" x2="490" y2="110" stroke="#064e3b" stroke-width="1" stroke-dasharray="4 4" />
+  </g>
+
+  <!-- Editorial Info -->
+  <text x="50" y="60" font-family="sans-serif" font-size="11" font-weight="700" letter-spacing="4" fill="#a0a0a0">CASE STUDY / 05</text>
+  <text x="750" y="60" font-family="sans-serif" font-size="11" font-weight="600" letter-spacing="2" fill="#10b981" text-anchor="end">$42M PORTFOLIO</text>
+  <text x="50" y="450" font-family="'Syne', sans-serif" font-size="28" font-weight="800" fill="#ffffff" letter-spacing="1">Neo-Ventures Capital</text>
+  <text x="50" y="475" font-family="sans-serif" font-size="12" font-weight="500" fill="#888888" letter-spacing="1">Venture Studio Brand Identity &amp; Financial Analytics</text>
+</svg>

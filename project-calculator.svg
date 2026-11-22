@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="cBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#181310" />
+      <stop offset="50%" stop-color="#211712" />
+      <stop offset="100%" stop-color="#0e0a08" />
+    </linearGradient>
+    <linearGradient id="amberGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#cBg)" />
+
+  <text x="400" y="260" font-family="'Syne', 'Inter', sans-serif" font-size="100" font-weight="900" fill="#ffffff" fill-opacity="0.03" text-anchor="middle" letter-spacing="16">C ENGINE</text>
+
+  <!-- Split View: C Core Logic vs Web Dashboard -->
+  <g transform="translate(100, 90)">
+    <rect x="0" y="0" width="600" height="310" rx="16" fill="#140f0c" stroke="#3d2a1d" stroke-width="1.5" />
+    
+    <!-- Top Bar -->
+    <rect x="0" y="0" width="600" height="42" rx="16" fill="#1f1610" />
+    <circle cx="28" cy="21" r="5" fill="#ef4444" />
+    <circle cx="44" cy="21" r="5" fill="#f59e0b" />
+    <circle cx="60" cy="21" r="5" fill="#10b981" />
+    <text x="300" y="26" font-family="sans-serif" font-size="11" font-weight="700" fill="#f59e0b" text-anchor="middle">Scientific Calculator in C &bull; Web Simulator &bull; GCC Engine</text>
+
+    <!-- Left: Terminal C Engine -->
+    <rect x="25" y="65" width="265" height="215" rx="10" fill="#0b0806" stroke="#2d1e15" stroke-width="1" />
+    <text x="40" y="95" font-family="monospace" font-size="10" fill="#f59e0b">// C Mathematical Core</text>
+    <text x="40" y="115" font-family="monospace" font-size="9" fill="#e2e8f0">double calc(int op, double a) {</text>
+    <text x="50" y="132" font-family="monospace" font-size="9" fill="#10b981">  // Safety guards</text>
+    <text x="50" y="149" font-family="monospace" font-size="9" fill="#93c5fd">  if(op == LOG &amp;&amp; a &lt;= 0) error();</text>
+    <text x="50" y="166" font-family="monospace" font-size="9" fill="#93c5fd">  if(op == SQRT &amp;&amp; a &lt; 0) error();</text>
+    <text x="50" y="183" font-family="monospace" font-size="9" fill="#fbbf24">  switch(op) {</text>
+    <text x="60" y="200" font-family="monospace" font-size="9" fill="#e2e8f0">    case SIN: return sin(a);</text>
+    <text x="60" y="217" font-family="monospace" font-size="9" fill="#e2e8f0">    case COS: return cos(a);</text>
+    <text x="50" y="234" font-family="monospace" font-size="9" fill="#fbbf24">  }</text>
+    <text x="40" y="251" font-family="monospace" font-size="9" fill="#e2e8f0">}</text>
+
+    <!-- Right: Modern Web Simulator UI -->
+    <rect x="310" y="65" width="265" height="215" rx="10" fill="#1b120c" stroke="#3d2a1d" stroke-width="1" />
+    <rect x="325" y="80" width="235" height="42" rx="6" fill="#0d0805" stroke="#f59e0b" stroke-width="1" />
+    <text x="545" y="108" font-family="'Syne', monospace" font-size="16" font-weight="800" fill="#f59e0b" text-anchor="end">sin(45°) = 0.7071</text>
+
+    <!-- Keypad Grid -->
+    <g transform="translate(325, 135)">
+      <rect x="0" y="0" width="50" height="30" rx="4" fill="#2d1e15" /><text x="25" y="19" font-family="sans-serif" font-size="10" font-weight="700" fill="#ffffff" text-anchor="middle">sin</text>
+      <rect x="60" y="0" width="50" height="30" rx="4" fill="#2d1e15" /><text x="85" y="19" font-family="sans-serif" font-size="10" font-weight="700" fill="#ffffff" text-anchor="middle">cos</text>
+      <rect x="120" y="0" width="50" height="30" rx="4" fill="#2d1e15" /><text x="145" y="19" font-family="sans-serif" font-size="10" font-weight="700" fill="#ffffff" text-anchor="middle">tan</text>
+      <rect x="180" y="0" width="55" height="30" rx="4" fill="#d97706" /><text x="207" y="19" font-family="sans-serif" font-size="11" font-weight="800" fill="#ffffff" text-anchor="middle">CE</text>
+
+      <rect x="0" y="38" width="50" height="30" rx="4" fill="#2d1e15" /><text x="25" y="57" font-family="sans-serif" font-size="10" font-weight="700" fill="#ffffff" text-anchor="middle">log</text>
+      <rect x="60" y="38" width="50" height="30" rx="4" fill="#2d1e15" /><text x="85" y="57" font-family="sans-serif" font-size="10" font-weight="700" fill="#ffffff" text-anchor="middle">ln</text>
+      <rect x="120" y="38" width="50" height="30" rx="4" fill="#2d1e15" /><text x="145" y="57" font-family="sans-serif" font-size="10" font-weight="700" fill="#ffffff" text-anchor="middle">√x</text>
+      <rect x="180" y="38" width="55" height="30" rx="4" fill="#2d1e15" /><text x="207" y="57" font-family="sans-serif" font-size="10" font-weight="700" fill="#ffffff" text-anchor="middle">x^y</text>
+
+      <rect x="0" y="76" width="110" height="45" rx="6" fill="#10b981" /><text x="55" y="103" font-family="sans-serif" font-size="12" font-weight="800" fill="#ffffff" text-anchor="middle">Step Simulator</text>
+      <rect x="120" y="76" width="115" height="45" rx="6" fill="url(#amberGrad)" /><text x="177" y="103" font-family="sans-serif" font-size="13" font-weight="800" fill="#ffffff" text-anchor="middle">Execute =</text>
+    </g>
+  </g>
+
+  <text x="50" y="55" font-family="sans-serif" font-size="11" font-weight="700" letter-spacing="4" fill="#f59e0b">SYSTEMS PROGRAMMING / 04</text>
+  <text x="750" y="55" font-family="sans-serif" font-size="11" font-weight="700" letter-spacing="2" fill="#f59e0b" text-anchor="end">C &bull; WEB SIMULATION</text>
+  <text x="50" y="445" font-family="'Syne', sans-serif" font-size="28" font-weight="800" fill="#ffffff" letter-spacing="1">Scientific Calculator Engine &amp; Web Simulator</text>
+  <text x="50" y="470" font-family="sans-serif" font-size="12" font-weight="500" fill="#94a3b8" letter-spacing="1">C (Modular Functions) &bull; HTML5 &bull; CSS3 &bull; Vanilla JavaScript &bull; Defensive Edge Guards</text>
+</svg>

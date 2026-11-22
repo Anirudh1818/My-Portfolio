@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO & Social Meta -->
+  <title>Anirudh Saxena | Full-Stack Engineer &amp; AI Developer</title>
+  <meta name="description" content="Portfolio of Anirudh Saxena — First-year B.Tech CSE (AI) Student at Shoolini University, HacXLerate 2026 1st Place Winner, Co-founder of Web Brothers Digital. Specializing in Next.js, TypeScript, Firebase, and AI systems.">
+  <meta name="author" content="Anirudh Saxena">
+  <meta name="keywords" content="Anirudh Saxena, Portfolio, Full-Stack Developer, AI Developer, Shoolini University, Moradabad, Next.js, Firebase">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='%232563eb'/><text x='50' y='65' font-size='45' font-weight='bold' fill='white' text-anchor='middle'>A</text></svg>">
+
+  <!-- Google Font: Inter (Crisp, modern, Silicon Valley tech typography) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- =========================================================
+       1. NAVIGATION BAR
+       - Left: Brand Logo & Avatar
+       - Center: Clean section navigation
+       - Right: Social Links & Direct Email CTA
+       ========================================================= -->
+  <header class="site-header" id="header">
+    <div class="nav-container container">
+      
+      <!-- Brand Logo with Photo Avatar Thumbnail -->
+      <a href="#hero" class="brand-logo" aria-label="Anirudh Saxena">
+        <img src="assets/anirudh-avatar.jpg" alt="Anirudh Saxena" class="brand-avatar">
+        <span class="logo-text">Anirudh<span class="logo-accent">.dev</span></span>
+      </a>
+
+      <!-- Main Navigation Menu -->
+      <nav class="main-nav" id="main-nav" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#hero" class="nav-item active">Home</a></li>
+          <li><a href="#works" class="nav-item">Projects</a></li>
+          <li><a href="#about" class="nav-item">About &amp; Honors</a></li>
+          <li><a href="#skills" class="nav-item">Skills</a></li>
+          <li><a href="#contact" class="nav-item">Contact</a></li>
+        </ul>
+
+        <!-- Header Quick Action Links -->
+        <div class="header-actions">
+          <a href="https://github.com/Anirudh1818" target="_blank" rel="noopener noreferrer" class="social-btn" title="GitHub Profile">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/in/anirudh-saxena-b3b7a7276" target="_blank" rel="noopener noreferrer" class="social-btn" title="LinkedIn Profile">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+              <rect x="2" y="9" width="4" height="12"></rect>
+              <circle cx="4" cy="4" r="2"></circle>
+            </svg>
+          </a>
+          <a href="#contact" class="btn-contact-pill">Hire / Connect</a>
+        </div>
+      </nav>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- =========================================================
+       2. CINEMATIC HERO SECTION
+       Featuring Anirudh's night photo in the background
+       with a dramatic dark atmospheric gradient overlay!
+       ========================================================= -->
+    <section class="hero-section" id="hero">
+      
+      <!-- Background Photo Layer (Anirudh's lakeside night picture) -->
+      <div class="hero-bg-layer" aria-hidden="true">
+        <div class="hero-bg-image" style="background-image: url('assets/anirudh-full.jpg');"></div>
+        <div class="hero-bg-overlay"></div>
+      </div>
+
+      <div class="hero-container container">
+        
+        <!-- Status & Location Badge -->
+        <div class="hero-status-row">
+          <div class="status-pill">
+            <span class="status-indicator-dot"></span>
+            <span>Available for Internships &amp; Freelance Projects</span>
+          </div>
+          <div class="location-pill">
+            <span>📍 Moradabad, UP, India</span>
+            <span class="ist-time-badge" id="ist-clock">18:45 IST</span>
+          </div>
+        </div>
+
+        <!-- Hero Content Headline -->
+        <div class="hero-content">
+          <p class="hero-intro-tag">Hi, my name is</p>
+          <h1 class="hero-name">Anirudh Saxena</h1>
+          <h2 class="hero-role-title">
+            Full-Stack Engineer <span class="highlight-slash">&amp;</span> AI Developer
+          </h2>
+          <p class="hero-summary">
+            First-Year B.Tech CSE (Artificial Intelligence) student at <strong>Shoolini University</strong>. 
+            Winner of <strong>HacXLerate 2026</strong> (Round 2 ByteXL Finalist) and Co-founder of <strong>Web Brothers Digital</strong>. 
+            I build high-performance web applications using Next.js, TypeScript, Firebase Security Rules, and AI integrations.
+          </p>
+
+          <!-- Primary Call to Actions -->
+          <div class="hero-actions">
+            <a href="#works" class="btn btn-primary">
+              <span>View Featured Projects</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <span>Send Me an Email</span>
+            </a>
+          </div>
+
+          <!-- Hero Metrics Bar -->
+          <div class="hero-metrics-bar">
+            <div class="metric-item">
+              <span class="metric-val">1st Place</span>
+              <span class="metric-lbl">HacXLerate 2026 Winner</span>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="metric-item">
+              <span class="metric-val">44 / 47</span>
+              <span class="metric-lbl">Commits on KreaLink</span>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="metric-item">
+              <span class="metric-val">600+</span>
+              <span class="metric-lbl">Lines of Firestore Rules</span>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="metric-item">
+              <span class="metric-val">2026–30</span>
+              <span class="metric-lbl">B.Tech CSE (AI)</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================
+       3. CONTINUOUS ACCOLADE MARQUEE
+       ========================================================= -->
+    <div class="marquee-strip" aria-hidden="true">
+      <div class="marquee-content">
+        <span>🏆 1ST PLACE WINNER — HACXLERATE 2026</span>
+        <span class="sep">&bull;</span>
+        <span>B.TECH CSE (ARTIFICIAL INTELLIGENCE) @ SHOOLINI UNIVERSITY</span>
+        <span class="sep">&bull;</span>
+        <span>NEXT.JS 16 &bull; TYPESCRIPT &bull; REACT 19</span>
+        <span class="sep">&bull;</span>
+        <span>CO-FOUNDER @ WEB BROTHERS DIGITAL</span>
+        <span class="sep">&bull;</span>
+        <span>FIREBASE SECURITY ARCHITECTURE &bull; 600+ LINES</span>
+        <span class="sep">&bull;</span>
+        <span>DATA ANALYTICS &bull; PANDAS &bull; PYTHON</span>
+        <span class="sep">&bull;</span>
+        <span>GEMINI &amp; OPENAI APIS &bull; RAZORPAY HMAC-SHA256</span>
+        <span class="sep">&bull;</span>
+      </div>
+      <div class="marquee-content" aria-hidden="true">
+        <span>🏆 1ST PLACE WINNER — HACXLERATE 2026</span>
+        <span class="sep">&bull;</span>
+        <span>B.TECH CSE (ARTIFICIAL INTELLIGENCE) @ SHOOLINI UNIVERSITY</span>
+        <span class="sep">&bull;</span>
+        <span>NEXT.JS 16 &bull; TYPESCRIPT &bull; REACT 19</span>
+        <span class="sep">&bull;</span>
+        <span>CO-FOUNDER @ WEB BROTHERS DIGITAL</span>
+        <span class="sep">&bull;</span>
+        <span>FIREBASE SECURITY ARCHITECTURE &bull; 600+ LINES</span>
+        <span class="sep">&bull;</span>
+        <span>DATA ANALYTICS &bull; PANDAS &bull; PYTHON</span>
+        <span class="sep">&bull;</span>
+        <span>GEMINI &amp; OPENAI APIS &bull; RAZORPAY HMAC-SHA256</span>
+        <span class="sep">&bull;</span>
+      </div>
+    </div>
+
+    <!-- =========================================================
+       4. FEATURED PROJECTS (REAL WORK FROM ANIRUDH'S CV)
+       ========================================================= -->
+    <section class="section works-section" id="works">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-tag">Portfolio Showcase</span>
+          <h2 class="section-title">Featured Projects &amp; Case Studies</h2>
+          <p class="section-subtitle">
+            Battle-tested applications, collegiate hackathon victories, and production client architectures.
+          </p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="works-filter-bar">
+          <button type="button" class="filter-pill active" data-filter="all">All Projects (4)</button>
+          <button type="button" class="filter-pill" data-filter="fullstack">Full-Stack &amp; AI</button>
+          <button type="button" class="filter-pill" data-filter="client">Client &amp; Production</button>
+          <button type="button" class="filter-pill" data-filter="systems">Data &amp; Systems</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="works-grid" id="works-grid">
+
+          <!-- Project 1: KreaLink -->
+          <article class="work-card" data-category="fullstack" data-project-id="krealink">
+            <div class="work-media">
+              <img src="assets/project-krealink.svg" alt="KreaLink Marketplace Dashboard" class="work-image" loading="lazy">
+              <div class="work-overlay">
+                <button type="button" class="btn-case-study" data-project="krealink">
+                  <span>Explore Architecture</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </button>
+              </div>
+              <span class="card-badge badge-winner">🏆 HacXLerate '26 1st Place</span>
+            </div>
+            <div class="work-content">
+              <div class="work-meta">
+                <span class="work-author">Team Tech Mafias &bull; Round 2 ByteXL Finalist</span>
+                <span class="work-date">May – Oct 2026</span>
+              </div>
+              <h3 class="work-title">KreaLink — AI-Creator Marketplace &amp; Escrow Platform</h3>
+              <p class="work-desc">
+                Matches brands with AI creators; primary developer (44 of 47 commits). Built brand, creator, and admin portals on Firebase Auth, Razorpay payments with server-side HMAC-SHA256 verification, and 600+ lines of Firestore security rules.
+              </p>
+              <div class="tech-pills">
+                <span class="pill">Next.js 16</span>
+                <span class="pill">TypeScript</span>
+                <span class="pill">Firebase Security</span>
+                <span class="pill">Razorpay</span>
+                <span class="pill">Gemini API</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Web Brothers Digital -->
+          <article class="work-card" data-category="client fullstack" data-project-id="webbrothers">
+            <div class="work-media">
+              <img src="assets/project-webbrothers.svg" alt="Web Brothers Digital Agency" class="work-image" loading="lazy">
+              <div class="work-overlay">
+                <button type="button" class="btn-case-study" data-project="webbrothers">
+                  <span>Explore Architecture</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </button>
+              </div>
+              <span class="card-badge badge-live">Live Production</span>
+            </div>
+            <div class="work-content">
+              <div class="work-meta">
+                <span class="work-author">Co-founder &bull; Moradabad</span>
+                <span class="work-date">May 2026 – Present</span>
+              </div>
+              <h3 class="work-title">Web Brothers Digital — Studio Platform &amp; Client Funnel</h3>
+              <p class="work-desc">
+                Co-founded a web-design agency for regional enterprises. Built a high-converting digital storefront with Next.js Server Actions, transactional email delivery through Resend, instant WhatsApp lead hand-off, and SEO metadata.
+              </p>
+              <div class="tech-pills">
+                <span class="pill">Next.js</span>
+                <span class="pill">TypeScript</span>
+                <span class="pill">Tailwind CSS</span>
+                <span class="pill">Server Actions</span>
+                <span class="pill">Resend API</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Supermarket Sales Analysis -->
+          <article class="work-card" data-category="systems" data-project-id="supermarket">
+            <div class="work-media">
+              <img src="assets/project-supermarket.svg" alt="Supermarket Sales BI Dashboard" class="work-image" loading="lazy">
+              <div class="work-overlay">
+                <button type="button" class="btn-case-study" data-project="supermarket">
+                  <span>Explore Architecture</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </button>
+              </div>
+              <span class="card-badge badge-info">1,000+ Transactions</span>
+            </div>
+            <div class="work-content">
+              <div class="work-meta">
+                <span class="work-author">Exploratory Data Science &bull; Individual</span>
+                <span class="work-date">Nov 2026</span>
+              </div>
+              <h3 class="work-title">Supermarket Sales Analysis — Exploratory Data Analysis</h3>
+              <p class="work-desc">
+                Answered 16 business intelligence questions across 3 supermarket branches using Pandas groupby and pivot tables. Identified Saturday as peak revenue day, 19:00 as busiest hour, and +44% higher female customer spend on Food &amp; Beverages.
+              </p>
+              <div class="tech-pills">
+                <span class="pill">Python</span>
+                <span class="pill">Pandas</span>
+                <span class="pill">Matplotlib</span>
+                <span class="pill">Seaborn</span>
+                <span class="pill">Jupyter</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: Scientific Calculator in C -->
+          <article class="work-card" data-category="systems" data-project-id="calculator">
+            <div class="work-media">
+              <img src="assets/project-calculator.svg" alt="Scientific Calculator in C with Web Simulator" class="work-image" loading="lazy">
+              <div class="work-overlay">
+                <button type="button" class="btn-case-study" data-project="calculator">
+                  <span>Explore Architecture</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </button>
+              </div>
+              <span class="card-badge badge-code">C &bull; Web Simulator</span>
+            </div>
+            <div class="work-content">
+              <div class="work-meta">
+                <span class="work-author">Systems Programming &bull; Individual</span>
+                <span class="work-date">Nov 2026</span>
+              </div>
+              <h3 class="work-title">Scientific Calculator in C with Interactive Web Simulator</h3>
+              <p class="work-desc">
+                Menu-driven C mathematical core with switch-case dispatch, division-by-zero guards, and negative root protections, paired with a modern browser dashboard mirroring C execution step-by-step.
+              </p>
+              <div class="tech-pills">
+                <span class="pill">C Language</span>
+                <span class="pill">HTML5</span>
+                <span class="pill">CSS3</span>
+                <span class="pill">Vanilla JS</span>
+                <span class="pill">Node.js</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+       5. ABOUT ANIRUDH, EDUCATION & ACHIEVEMENTS
+       ========================================================= -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-tag">About Me</span>
+          <h2 class="section-title">Education &amp; Achievements</h2>
+          <p class="section-subtitle">
+            An ambitious engineer with a proven track record in hackathons, cloud systems, and entrepreneurship.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          
+          <!-- Column 1: Bio Card with Photo -->
+          <div class="about-card bio-card">
+            <div class="bio-photo-box">
+              <img src="assets/anirudh-avatar.jpg" alt="Anirudh Saxena Portrait" class="bio-photo">
+              <div>
+                <h3 class="bio-name">Anirudh Saxena</h3>
+                <p class="bio-subtitle">Full-Stack Engineer &bull; AI Developer &bull; UI Designer</p>
+                <p class="bio-loc">📍 Moradabad, Uttar Pradesh, India</p>
+              </div>
+            </div>
+            <p class="bio-text">
+              I am a first-year B.Tech Computer Science &amp; Engineering (Artificial Intelligence) student at 
+              <strong>Shoolini University</strong>. I enjoy architecting web applications that bridge high-fashion, 
+              minimalist design with uncompromising backend security and zero-trust cloud data rules.
+            </p>
+            <p class="bio-text">
+              From leading KreaLink to 1st place at HacXLerate 2026, to co-founding Web Brothers Digital, I focus on 
+              shipping production-grade software that real people use.
+            </p>
+            <div class="bio-contact-cta">
+              <a href="#contact" class="btn btn-primary btn-sm">Get in Touch</a>
+              <a href="https://github.com/Anirudh1818" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">GitHub Profile</a>
+            </div>
+          </div>
+
+          <!-- Column 2: Education & Hackathon Cards -->
+          <div class="about-column">
+            
+            <!-- Education Card -->
+            <div class="about-card edu-card">
+              <div class="card-icon-title">
+                <span class="card-icon">🎓</span>
+                <h3 class="card-heading">Education</h3>
+              </div>
+              <div class="timeline-item">
+                <h4 class="timeline-title">B.Tech in Computer Science &amp; Engineering (AI)</h4>
+                <p class="timeline-sub">Shoolini University, Solan, Himachal Pradesh</p>
+                <span class="timeline-badge">2026 – 2030 (Expected) &bull; First Semester</span>
+              </div>
+            </div>
+
+            <!-- Hackathon Achievements Card -->
+            <div class="about-card achievement-card">
+              <div class="card-icon-title">
+                <span class="card-icon">🏆</span>
+                <h3 class="card-heading">Hackathons &amp; Leadership</h3>
+              </div>
+              <ul class="achievement-list">
+                <li>
+                  <strong>HacXLerate 2026 — 1st Position:</strong> Won 1st place at Shoolini University level with Team Tech Mafias; qualified for National Round 2.
+                </li>
+                <li>
+                  <strong>ByteXL National Round 2 Finalist:</strong> Competed at ByteXL's Hyderabad headquarters (October 2026), building KreaLink for the Kampus.vc brief.
+                </li>
+                <li>
+                  <strong>Co-founder @ Web Brothers Digital:</strong> Built high-performance marketing and lead platforms for local businesses in Moradabad.
+                </li>
+              </ul>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================
+       6. TECHNICAL SKILLS TOOLKIT
+       Categorized from Anirudh's CV
+       ========================================================= -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-tag">Technical Competence</span>
+          <h2 class="section-title">Skills &amp; Technology Stack</h2>
+          <p class="section-subtitle">
+            Languages, frameworks, cloud databases, and development tools I work with daily.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          
+          <!-- Category 1: Languages & Frontend -->
+          <div class="skill-category-card">
+            <div class="cat-header">
+              <span class="cat-icon">💻</span>
+              <div>
+                <h3 class="cat-title">Languages &amp; Frontend</h3>
+                <p class="cat-sub">Web Standards &bull; Frameworks</p>
+              </div>
+            </div>
+            <ul class="skill-meter-list">
+              <li>
+                <div class="skill-label-row">
+                  <span>TypeScript &amp; JavaScript (ES6+)</span>
+                  <span class="skill-tag">Advanced</span>
+                </div>
+                <div class="meter-bar"><div class="meter-fill" style="width: 95%;"></div></div>
+              </li>
+              <li>
+                <div class="skill-label-row">
+                  <span>React &amp; Next.js (App Router)</span>
+                  <span class="skill-tag">Advanced</span>
+                </div>
+                <div class="meter-bar"><div class="meter-fill" style="width: 92%;"></div></div>
+              </li>
+              <li>
+                <div class="skill-label-row">
+                  <span>C Language (Systems &amp; Logic)</span>
+                  <span class="skill-tag">Strong Core</span>
+                </div>
+                <div class="meter-bar"><div class="meter-fill" style="width: 88%;"></div></div>
+              </li>
+              <li>
+                <div class="skill-label-row">
+                  <span>HTML5 &amp; Modern CSS3</span>
+                  <span class="skill-tag">Mastery</span>
+                </div>
+                <div class="meter-bar"><div class="meter-fill" style="width: 98%;"></div></div>
+              </li>
+              <li>
+                <div class="skill-label-row">
+                  <span>Tailwind CSS &amp; UI Systems</span>
+                  <span class="skill-tag">Proficient</span>
+                </div>
+                <div class="meter-bar"><div class="meter-fill" style="width: 94%;"></div></div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Category 2: Backend, Security & Cloud -->
+          <div class="skill-category-card">
+            <div class="cat-header">
+              <span class="cat-icon">🔒</span>
+              <div>
+                <h3 class="cat-title">Backend &amp; Security</h3>
+                <p class="cat-sub">Cloud &bull; Database &bull; Payments</p>
+              </div>
+            </div>
+            <ul class="skill-meter-list">
+              <li>
+                <div class="skill-label-row">
+                  <span>Firebase (Auth, Firestore, Storage)</span>
+                  <span class="skill-tag">Advanced</span>
+                </div>
+                <div class="meter-bar"><div class="meter-fill" style="width: 94%;"></div></div>
+              </li>
+              <li>
+                <div class="skill-label-row">
+                  <span>Firestore Security Rules (600+ Lines)</span>
+                  <span class="skill-tag">Specialized</span>
+                </div>
+                <div class="meter-bar"><div class="meter-fill" style="width: 96%;"></div></div>
+              </li>
+              <li>
+                <div class="skill-label-row">
+                  <span>Node.js &amp; Route Handlers</span>
+                  <span class="skill-tag">Proficient</span>
+                </div>
+                <div class="meter-bar"><div class="meter-fill" style="width: 90%;"></div></div>
+              </li>
+              <li>
+                <div class="skill-label-row">
+                  <span>Razorpay HMAC-SHA256 Payments</span>
+                  <span class="skill-tag">Verified</span>
+                </div>
+                <div class="meter-bar"><div class="meter-fill" style="width: 92%;"></div></div>
+              </li>
+              <li>
+                <div class="skill-label-row">
+                  <span>REST APIs &amp; Server Actions</span>
+                  <span class="skill-tag">Proficient</span>
+                </div>
+                <div class="meter-bar"><div class="meter-fill" style="width: 90%;"></div></div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Category 3: AI, Data & Tools -->
+          <div class="skill-category-card">
+            <div class="cat-header">
+              <span class="cat-icon">🤖</span>
+              <div>
+                <h3 class="cat-title">AI, Data &amp; Dev Tools</h3>
+                <p class="cat-sub">Machine Learning &bull; Analytics</p>
+              </div>
+            </div>
+            <ul class="skill-meter-list">
+              <li>
+                <div class="skill-label-row">
+                  <span>Python &amp; Pandas Data Analytics</span>
+                  <span class="skill-tag">Proficient</span>
+                </div>
+                <div class="meter-bar"><div class="meter-fill" style="width: 88%;"></div></div>
+              </li>
+              <li>
+                <div class="skill-label-row">
+                  <span>Gemini &amp; OpenAI API Integration</span>
+                  <span class="skill-tag">Hands-on</span>
+                </div>
+                <div class="meter-bar"><div class="meter-fill" style="width: 90%;"></div></div>
+              </li>
+              <li>
+                <div class="skill-label-row">
+                  <span>Matplotlib, Seaborn &amp; Jupyter</span>
+                  <span class="skill-tag">Proficient</span>
+                </div>
+                <div class="meter-bar"><div class="meter-fill" style="width: 86%;"></div></div>
+              </li>
+              <li>
+                <div class="skill-label-row">
+                  <span>Git, GitHub &amp; Vercel CI/CD</span>
+                  <span class="skill-tag">Daily Use</span>
+                </div>
+                <div class="meter-bar"><div class="meter-fill" style="width: 95%;"></div></div>
+              </li>
+              <li>
+                <div class="skill-label-row">
+                  <span>Firebase Emulator &amp; node:test</span>
+                  <span class="skill-tag">Unit Tested</span>
+                </div>
+                <div class="meter-bar"><div class="meter-fill" style="width: 90%;"></div></div>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================
+       7. CONTACT & REAL WORKING INQUIRY FORM
+       Integrated directly with FormSubmit.co to deliver
+       real emails to saxenaanirudh59@gmail.com!
+       ========================================================= -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-tag">Let's Connect</span>
+          <h2 class="section-title">Get in Touch with Anirudh</h2>
+          <p class="section-subtitle">
+            Submitting this form delivers your message directly to my personal inbox (<span class="text-accent">saxenaanirudh59@gmail.com</span>).
+          </p>
+        </div>
+
+        <div class="contact-layout">
+          
+          <!-- Left Column: Direct Info -->
+          <div class="contact-info-card">
+            
+            <div class="status-indicator-pill">
+              <span class="status-indicator-dot"></span>
+              <span>Available for 2026/2027 Internships</span>
+            </div>
+
+            <h3 class="contact-card-title">Let's Talk Tech &amp; Opportunities</h3>
+            <p class="contact-card-text">
+              Whether you are looking to hire a driven software engineering intern, have an AI/Web project, 
+              or want to discuss collaboration, drop me a message. I typically respond within 24 hours.
+            </p>
+
+            <div class="contact-details-list">
+              
+              <!-- Email Item with Copy Button -->
+              <div class="detail-box">
+                <span class="detail-label">Email Address</span>
+                <div class="copy-email-group">
+                  <a href="mailto:saxenaanirudh59@gmail.com" class="detail-val link">saxenaanirudh59@gmail.com</a>
+                  <button type="button" class="btn-copy" id="btn-copy-email" title="Copy email address">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                      <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                    </svg>
+                    <span id="copy-tooltip">Copy</span>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Phone -->
+              <div class="detail-box">
+                <span class="detail-label">Phone</span>
+                <a href="tel:+919412142364" class="detail-val link">+91 94121 42364</a>
+              </div>
+
+              <!-- Location -->
+              <div class="detail-box">
+                <span class="detail-label">Location</span>
+                <span class="detail-val">Moradabad, Uttar Pradesh, India (Open to Remote)</span>
+              </div>
+
+              <!-- University -->
+              <div class="detail-box">
+                <span class="detail-label">University</span>
+                <span class="detail-val">Shoolini University, Solan, Himachal Pradesh</span>
+              </div>
+
+            </div>
+
+            <!-- Social Links -->
+            <div class="social-pills-row">
+              <a href="https://github.com/Anirudh1818" target="_blank" rel="noopener noreferrer" class="social-link-pill">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+                <span>GitHub &bull; @Anirudh1818</span>
+              </a>
+              <a href="https://www.linkedin.com/in/anirudh-saxena-b3b7a7276" target="_blank" rel="noopener noreferrer" class="social-link-pill">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                  <rect x="2" y="9" width="4" height="12"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+                <span>LinkedIn</span>
+              </a>
+              <a href="https://www.instagram.com/canvasofcode_mind?bqrl=MXE3eDY3OWprbTl5" target="_blank" rel="noopener noreferrer" class="social-link-pill">
+                <span>Instagram &bull; @canvasofcode_mind</span>
+              </a>
+            </div>
+
+          </div>
+
+          <!-- Right Column: REAL WORKING Contact Form -->
+          <div class="contact-form-container">
+            
+            <!-- Live Status Alert Banner -->
+            <div class="inquiry-banner" id="inquiry-banner" aria-live="polite"></div>
+
+            <!-- 
+              REAL WORKING FORM via FormSubmit.co:
+              Sends user message directly to saxenaanirudh59@gmail.com
+            -->
+            <form 
+              class="inquiry-form" 
+              id="inquiry-form" 
+              action="https://formsubmit.co/saxenaanirudh59@gmail.com" 
+              method="POST" 
+              novalidate
+            >
+              <!-- FormSubmit Configuration -->
+              <input type="hidden" name="_subject" value="New Portfolio Message for Anirudh Saxena!">
+              <input type="hidden" name="_captcha" value="false">
+              <input type="hidden" name="_template" value="table">
+              
+              <!-- Row 1: Name and Email -->
+              <div class="form-row-duo">
+                <div class="form-group" id="field-name">
+                  <label for="client-name" class="form-label">Your Name <span class="req">*</span></label>
+                  <input type="text" id="client-name" name="name" class="form-input" placeholder="e.g. Rahul Sharma" autocomplete="name" required>
+                  <span class="field-error" id="err-name"></span>
+                </div>
+
+                <div class="form-group" id="field-email">
+                  <label for="client-email" class="form-label">Your Email <span class="req">*</span></label>
+                  <input type="email" id="client-email" name="email" class="form-input" placeholder="e.g. rahul@company.com" autocomplete="email" required>
+                  <span class="field-error" id="err-email"></span>
+                </div>
+              </div>
+
+              <!-- Row 2: Purpose Radio Pills -->
+              <div class="form-group" id="field-service">
+                <label class="form-label">Inquiry Purpose <span class="req">*</span></label>
+                <div class="radio-pill-group">
+                  <label class="radio-pill">
+                    <input type="radio" name="purpose" value="Software Engineering Internship" checked>
+                    <span>Internship Opportunity</span>
+                  </label>
+                  <label class="radio-pill">
+                    <input type="radio" name="purpose" value="Full-Stack / Web Development Project">
+                    <span>Web Project</span>
+                  </label>
+                  <label class="radio-pill">
+                    <input type="radio" name="purpose" value="AI & Data Science Collaboration">
+                    <span>AI Collaboration</span>
+                  </label>
+                  <label class="radio-pill">
+                    <input type="radio" name="purpose" value="Networking / General Inquiry">
+                    <span>Networking</span>
+                  </label>
+                </div>
+              </div>
+
+              <!-- Row 3: Subject -->
+              <div class="form-group" id="field-subject">
+                <label for="client-subject" class="form-label">Subject</label>
+                <input type="text" id="client-subject" name="subject" class="form-input" placeholder="e.g. Internship Interview / Project Discussion">
+              </div>
+
+              <!-- Row 4: Message Body -->
+              <div class="form-group" id="field-message">
+                <label for="client-message" class="form-label">Message <span class="req">*</span></label>
+                <textarea id="client-message" name="message" rows="5" class="form-input form-textarea" placeholder="Share your message, project brief, or questions here..." required></textarea>
+                <span class="field-error" id="err-message"></span>
+              </div>
+
+              <!-- Submit Button -->
+              <button type="submit" class="btn btn-primary btn-submit" id="btn-submit">
+                <span>Send Message Directly</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================================================
+       8. CASE STUDY MODAL DRAWER
+       Deep dive into KreaLink, Web Brothers, EDA & C Engine
+       ========================================================= -->
+  <div class="case-study-modal" id="case-study-modal" aria-hidden="true" role="dialog" aria-labelledby="modal-case-title">
+    <div class="modal-card">
+      
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <div>
+          <span class="modal-category" id="modal-case-category">PROJECT SPOTLIGHT</span>
+          <h3 class="modal-title" id="modal-case-title">Project Case Study</h3>
+        </div>
+        <button type="button" class="modal-close-btn" id="modal-close-trigger" aria-label="Close modal">&times;</button>
+      </div>
+
+      <!-- Modal Body Content -->
+      <div class="modal-body" id="modal-scroll-body">
+        <!-- Dynamically populated via JavaScript -->
+      </div>
+
+      <!-- Modal Footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" id="modal-dismiss-btn">Close Case Study</button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- =========================================================
+       9. FOOTER
+       ========================================================= -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      
+      <div class="footer-top-row">
+        
+        <div class="footer-brand-box">
+          <a href="#hero" class="brand-logo footer-logo">
+            <img src="assets/anirudh-avatar.jpg" alt="Anirudh Saxena" class="brand-avatar">
+            <span class="logo-text">Anirudh<span class="logo-accent">.dev</span></span>
+          </a>
+          <p class="footer-tagline">
+            Full-Stack Software Engineer, AI Developer &amp; UI Designer. 
+            B.Tech CSE (AI) @ Shoolini University. Winner of HacXLerate 2026.
+          </p>
+        </div>
+
+        <div class="footer-nav-col">
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links-list">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#works">Featured Projects</a></li>
+            <li><a href="#about">About &amp; Honors</a></li>
+            <li><a href="#skills">Skills &amp; Tech</a></li>
+            <li><a href="#contact">Contact Anirudh</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact-col">
+          <h4 class="footer-col-title">Get in Touch</h4>
+          <a href="mailto:saxenaanirudh59@gmail.com" class="footer-email">saxenaanirudh59@gmail.com</a>
+          <p class="footer-subinfo">Moradabad, UP, India &bull; Open to Remote Worldwide</p>
+          <div class="footer-badge">
+            <span class="status-indicator-dot"></span>
+            <span>Open for Internships 2026/2027</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom-row">
+        <p class="copyright-text">
+          &copy; <span id="footer-year">2026</span> Anirudh Saxena. All rights reserved.
+        </p>
+        <p class="footer-credits">
+          Handcrafted with Pure HTML5, CSS3 &amp; Vanilla JavaScript &bull; Moradabad, India
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Vanilla JavaScript Application -->
+  <script src="script.js"></script>
+</body>
+</html>
